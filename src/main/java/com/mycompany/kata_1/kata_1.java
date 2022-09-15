@@ -1,18 +1,15 @@
 package com.mycompany.kata_1;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.LocalDate;
+
 
 public class kata_1 {
     
     public static void main(String[] args){
-        Calendar date;
-        date = GregorianCalendar.getInstance();
-        date.set(2002, 6, 9);
-        Person person = new Person("Juaquin", date);
+        LocalDate date;
+        date = LocalDate.of(2002, 6, 9);
+        
+        Person person = new Person("Joaquín", date);
         System.out.println(person.getName() + " tiene " + person.getAge() + " años");
-    }
-    
-    
-    
+    }    
 }
